@@ -1,0 +1,53 @@
+{
+  "id": "634a2054-b2c5-430d-819e-9cb8c35839dc",
+  "name": "Adshares billboard 1x1",
+  "tags": ["income", "earnings", "ads", "banner", "advertisement", "advertising"],
+  "category": "decorations",
+  "model": "models/@adshares/ads_billboard_1_1.glb",
+  "parameters": [
+    {
+      "id": "payout_network",
+      "label": "Payout network",
+      "type": "options",
+      "options": [
+        {
+          "value": "bsc",
+          "label": "Binance Smart Chain (0x...)"
+        },
+        {
+          "value": "ads",
+          "label": "Adshares Chain (https://adshares.net/wallet)"
+        }
+      ],
+      "default": "ads"
+    },
+    {
+      "id": "payout_address",
+      "label": "Payout address",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "zone_name",
+      "label": "Placement name",
+      "type": "text",
+      "default": "default"
+    },
+    {
+      "id": "adserver",
+      "label": "(expert) Adserver url",
+      "type": "text",
+      "default": "https://app.web3ads.net"
+    },
+    {
+      "id": "types",
+      "label": "(expert) Types (comma separated)",
+      "type": "text"
+    },
+    {
+      "id": "mimes",
+      "label": "(expert) Mimes (comma separated)",
+      "type": "text"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "150cf492-f799-4d3b-a054-a0a90eea8e4e",
+  "name": "Adshares banner",
+  "category": "decorations",
+  "model": "models/@adshares/image_preview.glb",
+  "tags": ["income", "earnings", "ads", "banner", "advertisement", "advertising"],
+  "parameters": [
+    {
+      "id": "payout_network",
+      "label": "Payout network",
+      "type": "options",
+      "options": [
+        {
+          "value": "bsc",
+          "label": "Binance Smart Chain (0x...)"
+        },
+        {
+          "value": "ads",
+          "label": "Adshares Chain (https://adshares.net/wallet)"
+        }
+      ],
+      "default": "ads"
+    },
+    {
+      "id": "payout_address",
+      "label": "Payout address",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "zone_name",
+      "label": "Placement name",
+      "type": "text",
+      "default": "default"
+    },
+    {
+      "id": "adserver",
+      "label": "(expert) Adserver url",
+      "type": "text",
+      "default": "https://app.web3ads.net"
+    },
+    {
+      "id": "types",
+      "label": "(expert) Types (comma separated)",
+      "type": "text"
+    },
+    {
+      "id": "mimes",
+      "label": "(expert) Mimes (comma separated)",
+      "type": "text"
+    }
+  ]
+}
