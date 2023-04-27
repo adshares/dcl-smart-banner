@@ -14,7 +14,7 @@
     "decentraland-ecs": "latest"
   },
   "dependencies": {
-    "@adshares/decentraland": "^2.1.1",
+    "@adshares/decentraland": "latest",
     "decentraland-builder-scripts": "latest"
   }
 }

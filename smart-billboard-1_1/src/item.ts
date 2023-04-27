@@ -12,8 +12,11 @@ export type Props = {
 
 export default class SmartBillboard_1_1 implements IScript<Props> {
   private supplyAgent: Ads.SupplyAgent | undefined = undefined
+  private itemCounter: number = 0
+  private itemLimit: number = 5
 
-  init (args: { inventory: IInventory }) {}
+  init (args: { inventory: IInventory }) {
+  }
 
   spawn (host: Entity, props: Props, channel: IChannel) {
     if (!this.supplyAgent) {
@@ -24,13 +27,20 @@ export default class SmartBillboard_1_1 implements IScript<Props> {
       return
     }
 
+    this.itemCounter += 1
+
     const screen = new Ads.Billboard(props.zone_name, {
       ratio: '1:1',
       ...(props.types ? { types: props.types.split(',').map(t => t.trim()) } : {}),
       ...(props.mimes ? { mimes: props.mimes.split(',').map(t => t.trim()) } : {})
     })
+    screen.setParent(host)
+
+    if(this.itemCounter > this.itemLimit) {
+      screen.getPlacements().forEach(placement => placement.renderMessage(`To many items, you can add up to ${this.itemLimit} items.`, 'error'))
+      return
+    }
 
     this.supplyAgent.addPlacement(screen).spawn()
-    screen.setParent(host)
   }
 }
