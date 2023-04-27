@@ -8,6 +8,11 @@ rm -rf "$dist"
 for dir in `ls`; do
   test -d "$dir" || continue
   cd "$dir"
+  if [ `basename $(pwd)` = "docs" ]; then
+    cd ..
+    continue
+  fi
+  npm install
   dcl pack
   item=$(find . -name "item.zip")
   mkdir -p ../"$dist"
