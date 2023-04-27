@@ -17,6 +17,6 @@ for dir in `ls`; do
 done
 
 if [ -d "$dist" ]; then
-  (cd "$dist" && zip -r ../"$projectName".zip .)
+  (cd "$dist" && zip -r "$projectName".zip .)
   echo "Build complete"
 fi

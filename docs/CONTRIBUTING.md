@@ -29,12 +29,12 @@ Some things that will increase the chance that your pull request is accepted:
 - Ensure the PR description clearly describes the problem and solution. 
 - Include the relevant issue number if applicable.
 
-[bug list]: https://github.com/adshares/decentraland/labels/Bug
-[bug report template]: https://github.com/adshares/decentraland/issues/new?template=bug_report.md&labels=Bug
-[issues]: https://github.com/adshares/decentraland/issues
+[bug list]: https://github.com/adshares/dcl-smart-banner/labels/Bug
+[bug report template]: https://github.com/adshares/dcl-smart-banner/issues/new?template=bug_report.md&labels=Bug
+[issues]: https://github.com/adshares/dcl-smart-banner/issues
 [telegram]: https://t.me/adshares
 [tech_email]: mailto:tech@adshares.net
-[pr]: https://github.com/adshares/decentraland/compare/
+[pr]: https://github.com/adshares/dcl-smart-banner/compare/
 [style]: https://standardjs.com/
 [commit]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 

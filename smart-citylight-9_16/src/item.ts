@@ -13,7 +13,7 @@ export type Props = {
 export default class SmartCitylight_9_16 implements IScript<Props> {
   private supplyAgent: Ads.SupplyAgent | undefined = undefined
   private itemCounter: number = 0
-  private itemLimit: number = 3
+  private itemLimit: number = 5
 
   init (args: { inventory: IInventory }) {}
 
