@@ -2,7 +2,7 @@
   <a href="https://adshares.net/">
     <img src="https://adshares.net/logos/ads.svg" alt="Adshares" width=72 height=72>
   </a>
-  <h3 align="center"><small>Adshares DCL smart items</small></h3>
+  <h3 align="center"><small>Adshares DCL Smart Banner</small></h3>
   <p align="center">
     <a href="https://github.com/adshares/dcl-smart-banner/issues/new?template=bug_report.md&labels=Bug">Report bug</a>
     ·
@@ -14,7 +14,7 @@
 
 <br>
 
-Adshares smart items for **Decentraland** scenes. You can use it in your scenes for addition hassle-free earnings.
+Adshares DCL smart banners for **Decentraland** scenes. You can use it in your scenes for addition hassle-free earnings.
 
 Easy configuration. Just fill out your payout address (Adshares blockchain or as BEP20 token) and get paid in $ADS for every visitor on your scene.
 
