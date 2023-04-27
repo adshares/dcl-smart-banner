@@ -1,10 +1,9 @@
 #!/bin/bash
 
-projectName=dcl-smart-banner
+distFile=adshares-banners.zip
 dist=./dist
 
 rm -rf "$dist"
-rm -rf "$projectName".zip
 
 for dir in `ls`; do
   test -d "$dir" || continue
@@ -17,6 +16,6 @@ for dir in `ls`; do
 done
 
 if [ -d "$dist" ]; then
-  (cd "$dist" && zip -r "$projectName".zip .)
+  (cd "$dist" && zip -r "$distFile" .)
   echo "Build complete"
 fi

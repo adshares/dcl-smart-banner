@@ -18,10 +18,15 @@ Adshares smart items for **Decentraland** scenes. You can use it in your scenes 
 
 Easy configuration. Just fill out your payout address (Adshares blockchain or as BEP20 token) and get paid in $ADS for every visitor on your scene.
 
+If your are looking for SDK plugin see [Adshares DCL SDK plugin](https://github.com/adshares/decentraland).
+
 ## Usage
 
-Download zip archive. Unpack smart items. Create your own item collection in the [Decentraland builder](https://builder.decentraland.org/). Add items to the collection. Place items on your scene.  
-[Check detailed instruction](https://adshar.es/decentraland)
+  1. Download zip archive from the [latest release](https://github.com/adshares/dcl-smart-banner/releases/latest) and unpack smart items.
+  2. Create your own item collection in the [Decentraland builder](https://builder.decentraland.org/) and add items to the collection.
+  3. Place smart items in your scene.  
+
+Check [detailed instruction](https://adshar.es/decentraland).
 
 ### Contributing
 
@@ -33,7 +38,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-- **[Contributor](https://github.com/smartsir796)** - _programmer_
+- **[Mykola Zhura](https://github.com/Niko-Yea)** - _programmer_
+- **[Maciej Pilarczyk](https://github.com/m-pilarczyk)** - _programmer_
 
 See also the list of [contributors](https://github.com/adshares/dcl-smart-banner/contributors) who participated in this project.
 
@@ -43,6 +49,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## More info
 
+- [Adshares DCL SDK plugin](https://github.com/adshares/decentraland)
 - [Adshares](https://adshares.net)
-- [Usage instructions](https://adshar.es/decentraland)
+- [Adshares Docs](https://docs.adshares.net)
 - [DCL smart items](https://docs.decentraland.org/development-guide/smart-items/)
