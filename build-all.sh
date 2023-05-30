@@ -13,6 +13,7 @@ for dir in `ls`; do
     continue
   fi
   npm install
+  npm update --save
   dcl pack
   item=$(find . -name "item.zip")
   mkdir -p ../"$dist"

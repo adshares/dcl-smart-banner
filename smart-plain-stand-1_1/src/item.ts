@@ -10,7 +10,7 @@ export type Props = {
 
 }
 
-export default class SmartPlainPlacement_1_1 implements IScript<Props> {
+export default class SmartPlainStand_1_1 implements IScript<Props> {
   private supplyAgent: Ads.SupplyAgent | undefined = undefined
   private itemCounter: number = 0
   private itemLimit: number = 10
@@ -31,14 +31,14 @@ export default class SmartPlainPlacement_1_1 implements IScript<Props> {
 
     this.itemCounter += 1
 
-    const screen = new Ads.PlainPlacement(props.zone_name, {
+    const screen = new Ads.PlainStand(props.zone_name, {
       ...(props.types ? { types: props.types.split(',').map(t => t.trim()) } : {}),
       ...(props.mimes ? { mimes: props.mimes.split(',').map(t => t.trim()) } : {})
     })
     screen.setParent(host)
 
     if(this.itemCounter > this.itemLimit) {
-      screen.renderMessage(`To many items, you can add up to ${this.itemLimit} items.`, 'error')
+      screen.getPlacements().forEach(placement => placement.renderMessage(`To many items, you can add up to ${this.itemLimit} items.`, 'error'))
       return
     }
 
